@@ -42,6 +42,6 @@
     "singleQuote": true
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix"
+    "*.{jsx,js}": "eslint --cache --fix"
   }
 }
