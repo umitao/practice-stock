@@ -5,7 +5,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^17.0.0",
@@ -29,7 +30,9 @@
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-testing-library": "^3.10.2",
+    "husky": "^7.0.2",
     "jest": "^27.3.1",
+    "lint-staged": "^11.2.3",
     "prettier": "^2.4.1",
     "vite": "^2.6.4"
   },
@@ -37,5 +40,8 @@
     "trailingComma": "es5",
     "jsxSingleQuote": true,
     "singleQuote": true
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
   }
 }
